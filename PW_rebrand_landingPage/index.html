@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LP Concept Paloma Wool</title>
+		<link rel="stylesheet" href="assets/style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	</head>
+	<body>
+		<div class="site-logo">paloma ~ wool</div>
+		<div class="navbar">
+			
+			<div class="site-menu">
+				<div class="menu-item">Shop</div>
+				<div class="menu-item">Contact</div>
+				<div class="menu-item">Cart</div>
+			</div>
+		
+		</div>
+		<div class="container">
+			<div class="wrapper-img-c">
+				<div class="box"></div>
+				<div>
+					<img class="image" src="assets/images/img-1.jpg" />
+				</div>
+			</div>
+			<div class="wrapper-img-b">
+				<div class="box"></div>
+				<div>
+					<img class="image" src="assets/images/img-2.jpg" />
+				</div>
+			</div>
+			
+			<div class="circle-shape"></div>
+			<div class="circle-shape-2"></div>
+			<div class="circle-shape-3"></div>
+			<div class="blocks">
+				<div class="block-1 block">W</div>
+				<div class="block-2 block">O</div>
+				<div class="block-3 block">O</div>
+				<div class="block-4 block">L</div>
+			</div>
+		</div>
+		<script>
+			TweenMax.to(".block-1", 2, {
+				x: "-247",
+				y: "-100",
+				scale: "3.0",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-2", 2, {
+				x: "20",
+				y: "-180",
+				scale: "1.9",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-3", 2, {
+				x: "180",
+				y: "-240",
+				scale: "1.6",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-4", 2, {
+				x: "200",
+				y: "240",
+				scale: "2.0",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".box", 2.4, {
+				y: "-100%",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.from(".circle-shape", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".circle-shape-2", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".circle-shape-3", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".navbar > div", 1.6, {
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.from(".site-logo", 1.6, {
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.staggerFrom(
+				".site-menu > div",
+				1,
+				{
+					opacity: 0,
+					y: 60,
+					ease: Power2.easeOut,
+				},
+				0.2
+			);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #974126;
+	font-family: "HWT Arabesqueak";
+}
+
+.blocks {
+	display: flex;
+	font-size: 140px;
+	color: #e76dc3;
+	font-family: "HWT Arabesque";
+}
+
+.circle-shape {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 800px;
+	border: 1px solid #9b4931;
+	;
+	border-radius: 100%;
+}
+
+.circle-shape-2 {
+	position: absolute;
+	top: 48%;
+	left: 79%;
+	transform: translate(-50%, -50%);
+	width: 240px;
+	height: 240px;
+	background: #80c59e;
+	border-radius: 100%;
+}
+
+.circle-shape-3 {
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	height: 120px;
+	background: #80c59e;
+	border-radius: 100%;
+	z-index: 2;
+}
+
+.wrapper-img-c {
+	overflow: hidden;
+	position: absolute;
+	top: 35% !important;
+	right: 18%;
+	width: 30%;
+	height: 90vh;
+}
+
+.wrapper-img-e {
+	overflow: hidden;
+	position: absolute;
+	top: 35% !important;
+	right: 18%;
+	width: 30%;
+	height: 90vh;
+}
+
+.wrapper-img-b {
+	overflow: hidden;
+	position: absolute;
+	top: 0% !important;
+	right: 75%;
+	width: 30%;
+	height: 90vh;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box {
+	background: #974126;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper .container {
+	width: 96%;
+	margin: 0px auto;
+}
+
+.divider {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+
+.whitespace {
+	width: 100%;
+	height: 80px;
+}
+
+.site-logo {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Lust";
+	font-size: 35px;
+	line-height: 100px;
+	text-transform: lowercase;
+	color: #eee7dd;
+	
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	font-family: Fino Sans !important;
+	font-size: 24px;
+	text-transform: lowercase;
+	line-height: 100px;
+	color: #eee7dd;
+
+}
+
+.site-menu {
+	display: flex;
+	float: right;
+}
+
+.menu-item {
+	float: right;
+}
+
+.showreel {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 40px;
+	font-family: Fino Sans !important;
+	text-transform: lowercase;
+	color: #eee7dd;
+}
+
+@media (max-width: 900px) {
+	.navbar {
+		display: none;
+	}
+}
